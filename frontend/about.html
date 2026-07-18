@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Star Maryann</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#4A90E2',
+                            light: '#F8FAFC',
+                            gold: '#D4AF37',
+                            dark: '#1A202C'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['"Playfair Display"', 'serif'],
+                        body: ['"Lato"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #F8FAFC; }
+        ::-webkit-scrollbar-thumb { background: #4A90E2; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
+    </style>
+</head>
+<body class="font-body text-brand-dark bg-white antialiased">
+
+    <!-- Premium Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/SM BLEU BG VARIABLE 01-01.jpg.jpeg" alt="Star Maryann Logo" class="h-16 md:h-20 w-auto object-contain" onerror="this.onerror=null; this.src='assets/logo.png';">
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex flex-1 justify-center space-x-10 mt-2 font-heading text-xl">
+                    <a href="index.html" class="text-brand-dark font-medium hover:text-brand-gold hover:border-b-2 hover:border-brand-gold pb-1 transition-all duration-200">Home</a>
+                    <a href="menu.html" class="text-brand-dark font-medium hover:text-brand-gold hover:border-b-2 hover:border-brand-gold pb-1 transition-all duration-200">Menu</a>
+                    <a href="about.html" class="text-brand-gold font-bold border-b-2 border-brand-gold pb-1 transition-colors duration-200">About</a>
+                    <a href="gallery.html" class="text-brand-dark font-medium hover:text-brand-gold hover:border-b-2 hover:border-brand-gold pb-1 transition-all duration-200">Gallery</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:flex flex-shrink-0">
+                    <a href="menu.html" class="bg-brand-dark text-white font-bold px-8 py-3 rounded-full hover:bg-brand-gold hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                        Order Now
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-brand-dark hover:text-brand-blue focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl">
+            <div class="px-4 pt-4 pb-6 space-y-3 font-heading">
+                <a href="index.html" class="block px-3 py-2 text-brand-dark hover:text-brand-gold text-xl transition-colors">Home</a>
+                <a href="menu.html" class="block px-3 py-2 text-brand-dark hover:text-brand-gold text-xl transition-colors">Menu</a>
+                <a href="about.html" class="block px-3 py-2 text-brand-gold font-bold text-xl">About</a>
+                <a href="gallery.html" class="block px-3 py-2 text-brand-dark hover:text-brand-gold text-xl transition-colors">Gallery</a>
+                <a href="menu.html" class="block mt-4 text-center bg-brand-dark text-white px-6 py-3 rounded-full font-bold shadow-md">Order Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="relative pt-32 pb-20 bg-gray-900 flex items-center justify-center min-h-[40vh]">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 to-black/40"></div>
+        </div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl text-white font-bold mb-4 drop-shadow-lg">
+                Our <span class="text-brand-gold italic font-normal">Philosophy</span>
+            </h1>
+            <div class="w-24 h-1 bg-brand-gold mx-auto mb-6"></div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-heading text-3xl md:text-4xl font-bold text-brand-dark mb-6">The Star Maryann Standard</h2>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold text-brand-blue mb-2 uppercase tracking-wide">Our Mission</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            To redefine the culinary landscape by delivering creatively crafted, presentable, and unforgettable dining experiences that celebrate both local heritage and global gastronomy.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold text-brand-blue mb-2 uppercase tracking-wide">Our Vision</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            To be the premier destination for fine dining, recognized for our unique ambiance, uncompromising quality, and the passionate mentors who drive our culinary excellence.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7jHkQn-e8CCREUNo3jgu5QDGK0qajOQJDCh6NeevQMA&s=10" alt="Plated Food" class="rounded-lg shadow-xl w-full h-96 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentors Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl md:text-5xl font-bold text-brand-dark mb-4">Meet Our Mentors</h2>
+                <div class="w-24 h-1 bg-brand-gold mx-auto"></div>
+                <p class="mt-6 text-gray-600 max-w-2xl mx-auto">The visionary minds and culinary experts behind the excellence of Star Maryann.</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
+                <!-- Mentor 1 -->
+                <div class="text-center group">
+                    <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-brand-light group-hover:border-brand-gold transition-colors duration-300 shadow-lg">
+                        <img src="https://placehold.co/300x300/4A90E2/ffffff?text=Photo" alt="Mentor 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <h3 class="font-heading text-lg md:text-xl font-bold text-brand-dark">name 1</h3>
+                    <p class="text-brand-gold font-medium uppercase text-sm tracking-wider mt-1">Job 1</p>
+                </div>
+
+                <!-- Mentor 2 -->
+                <div class="text-center group">
+                    <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-brand-light group-hover:border-brand-gold transition-colors duration-300 shadow-lg">
+                        <img src="https://placehold.co/300x300/D4AF37/1A202C?text=Photo" alt="Mentor 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <h3 class="font-heading text-lg md:text-xl font-bold text-brand-dark">name 2</h3>
+                    <p class="text-brand-gold font-medium uppercase text-sm tracking-wider mt-1">Job 2</p>
+                </div>
+
+                <!-- Mentor 3 -->
+                <div class="text-center group">
+                    <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-brand-light group-hover:border-brand-gold transition-colors duration-300 shadow-lg">
+                        <img src="https://placehold.co/300x300/1A202C/D4AF37?text=Photo" alt="Mentor 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <h3 class="font-heading text-lg md:text-xl font-bold text-brand-dark">name 3</h3>
+                    <p class="text-brand-gold font-medium uppercase text-sm tracking-wider mt-1">Job 3</p>
+                </div>
+
+                <!-- Mentor 4 -->
+                <div class="text-center group">
+                    <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-brand-light group-hover:border-brand-gold transition-colors duration-300 shadow-lg">
+                        <img src="https://placehold.co/300x300/4A90E2/1A202C?text=Photo" alt="Mentor 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <h3 class="font-heading text-lg md:text-xl font-bold text-brand-dark">name 4</h3>
+                    <p class="text-brand-gold font-medium uppercase text-sm tracking-wider mt-1">Job 4</p>
+                </div>
+
+                <!-- Mentor 5 -->
+                <div class="text-center group col-span-2 sm:col-span-1">
+                    <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-brand-light group-hover:border-brand-gold transition-colors duration-300 shadow-lg">
+                        <img src="https://placehold.co/300x300/D4AF37/ffffff?text=Photo" alt="Mentor 5" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <h3 class="font-heading text-lg md:text-xl font-bold text-brand-dark">name 5</h3>
+                    <p class="text-brand-gold font-medium uppercase text-sm tracking-wider mt-1">Job 5</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="font-heading text-2xl font-bold text-brand-blue mb-4 uppercase tracking-wider">Star Maryann</h3>
+                <p class="text-gray-400">Uniqueness, creativity, and presentable fine dining experiences.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-brand-gold mb-4 uppercase">Contact</h4>
+                <p class="text-gray-400">Yaoundé, Cameroon</p>
+                <p class="text-gray-400">contact@starmaryann.com</p>
+                <p class="text-gray-400">+237 600 000 000</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-brand-gold mb-4 uppercase">Hours</h4>
+                <p class="text-gray-400">Mon-Sat: 12:00 PM - 11:00 PM</p>
+                <p class="text-gray-400">Sun: 2:00 PM - 10:00 PM</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+            &copy; 2026 Star Maryann. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => { menu.classList.add('hidden'); });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Maryann | Fine Dining</title>
+    
+    <!-- Google Fonts for Premium Fine Dining Feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#4A90E2', // Elegant Sky Blue
+                            light: '#F8FAFC', // Off-white for sections
+                            gold: '#D4AF37', // Fine dining yellow/gold
+                            dark: '#1A202C'  // Deep slate for text
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['"Playfair Display"', 'serif'],
+                        body: ['"Lato"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for a premium feel */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #F8FAFC; }
+        ::-webkit-scrollbar-thumb { background: #4A90E2; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
+    </style>
+</head>
+<body class="font-body text-brand-dark bg-white antialiased">
+
+    <!-- Premium Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/SM BLEU BG VARIABLE 01-01.jpg.jpeg" alt="Star Maryann Logo" class="h-16 md:h-20 w-auto object-contain" onerror="this.onerror=null; this.src='assets/logo.png';">
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex flex-1 justify-center space-x-10 mt-2 font-heading text-xl">
+                    <a href="index.html" class="text-brand-gold font-bold border-b-2 border-brand-gold pb-1 transition-colors duration-200">Home</a>
+                    <a href="menu.html" class="text-brand-dark font-medium hover:text-brand-gold hover:border-b-2 hover:border-brand-gold pb-1 transition-all duration-200">Menu</a>
+                    <a href="about.html" class="text-brand-dark font-medium hover:text-brand-gold hover:border-b-2 hover:border-brand-gold pb-1 transition-all duration-200">About</a>
+                    <a href="gallery.html" class="text-brand-dark font-medium hover:text-brand-gold hover:border-b-2 hover:border-brand-gold pb-1 transition-all duration-200">Gallery</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:flex flex-shrink-0">
+                    <a href="menu.html" class="bg-brand-dark text-white font-bold px-8 py-3 rounded-full hover:bg-brand-gold hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                        Order Now
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-brand-dark hover:text-brand-blue focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl">
+            <div class="px-4 pt-4 pb-6 space-y-3 font-heading">
+                <a href="index.html" class="block px-3 py-2 text-brand-gold font-bold text-xl">Home</a>
+                <a href="menu.html" class="block px-3 py-2 text-brand-dark hover:text-brand-gold text-xl transition-colors">Menu</a>
+                <a href="about.html" class="block px-3 py-2 text-brand-dark hover:text-brand-gold text-xl transition-colors">About</a>
+                <a href="gallery.html" class="block px-3 py-2 text-brand-dark hover:text-brand-gold text-xl transition-colors">Gallery</a>
+                <a href="menu.html" class="block mt-4 text-center bg-brand-dark text-white px-6 py-3 rounded-full font-bold shadow-md">Order Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0 bg-gray-900">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQr11oiKg4V107OM5oFoE9ZXb99Q7Cn0k71HRSN5NBKA&s=10" alt="Restaurant Background" class="w-full h-full object-cover opacity-60">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
+            <h1 class="font-heading text-4xl md:text-6xl lg:text-7xl text-white font-bold mb-6 drop-shadow-lg">
+                Uniqueness. Creativity. <br> <span class="text-brand-gold italic font-normal">Presentable.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 font-light max-w-2xl mx-auto drop-shadow-md">
+                Experience a symphony of flavors in a setting designed for the extraordinary. Welcome to the pinnacle of dining in Cameroon.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="font-heading text-2xl font-bold text-brand-blue mb-4 uppercase tracking-wider">Star Maryann</h3>
+                <p class="text-gray-400">Uniqueness, creativity, and presentable fine dining experiences.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-brand-gold mb-4 uppercase">Contact</h4>
+                <p class="text-gray-400">Yaoundé, Cameroon</p>
+                <p class="text-gray-400">contact@starmaryann.com</p>
+                <p class="text-gray-400">+237 600 000 000</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-brand-gold mb-4 uppercase">Hours</h4>
+                <p class="text-gray-400">Mon-Sat: 12:00 PM - 11:00 PM</p>
+                <p class="text-gray-400">Sun: 2:00 PM - 10:00 PM</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+            &copy; 2026 Star Maryann. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => { menu.classList.add('hidden'); });
+        });
+    </script>
+</body>
+</html>
