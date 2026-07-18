@@ -16,10 +16,9 @@
                 extend: {
                     colors: {
                         brand: {
-                            blue: '#00AEEF', // Vibrant logo blue
-                            gold: '#FFD700', // Vibrant logo yellow
-                            light: '#F4FAFE', // Very soft blue-tinted white for backgrounds
-                            darkblue: '#003366' // Deep navy for readable text (replaces black)
+                            marine: '#0A192F', // Deep Marine Blue
+                            gold: '#D4AF37', // Fine Dining Gold
+                            blue: '#00AEEF' // Your vibrant logo blue (for hover accents)
                         }
                     },
                     fontFamily: {
@@ -32,15 +31,15 @@
     </script>
     <style>
         ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #F4FAFE; }
-        ::-webkit-scrollbar-thumb { background: #00AEEF; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #FFD700; }
+        ::-webkit-scrollbar-track { background: #FFFFFF; }
+        ::-webkit-scrollbar-thumb { background: #0A192F; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
     </style>
 </head>
-<body class="font-body text-brand-darkblue bg-white antialiased">
+<body class="font-body text-brand-marine bg-white antialiased">
 
-    <!-- Premium Navigation -->
-    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm border-b border-blue-50">
+    <!-- Premium Glassmorphism Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-lg shadow-sm border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-24">
                 
@@ -53,22 +52,22 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex flex-1 justify-center space-x-10 mt-2 font-heading text-xl">
-                    <a href="index.html" class="text-brand-darkblue font-medium hover:text-brand-blue hover:border-b-2 hover:border-brand-blue pb-1 transition-all duration-200">Home</a>
-                    <a href="menu.html" class="text-brand-darkblue font-medium hover:text-brand-blue hover:border-b-2 hover:border-brand-blue pb-1 transition-all duration-200">Menu</a>
+                    <a href="index.html" class="text-brand-marine font-medium hover:text-brand-gold pb-1 transition-all duration-200">Home</a>
+                    <a href="menu.html" class="text-brand-marine font-medium hover:text-brand-gold pb-1 transition-all duration-200">Menu</a>
                     <a href="about.html" class="text-brand-gold font-bold border-b-2 border-brand-gold pb-1 transition-colors duration-200">About</a>
-                    <a href="gallery.html" class="text-brand-darkblue font-medium hover:text-brand-blue hover:border-b-2 hover:border-brand-blue pb-1 transition-all duration-200">Gallery</a>
+                    <a href="gallery.html" class="text-brand-marine font-medium hover:text-brand-gold pb-1 transition-all duration-200">Gallery</a>
                 </div>
 
                 <!-- CTA Button -->
                 <div class="hidden md:flex flex-shrink-0">
-                    <a href="#" class="order-btn bg-brand-gold text-brand-darkblue font-bold px-8 py-3 rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                    <a href="#" class="order-btn bg-brand-marine text-white font-bold px-8 py-3 rounded-full hover:bg-brand-gold hover:text-brand-marine shadow-lg hover:-translate-y-0.5 transition-all duration-300">
                         Order Now
                     </a>
                 </div>
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-brand-darkblue hover:text-brand-blue focus:outline-none">
+                    <button id="mobile-menu-btn" class="text-brand-marine hover:text-brand-gold focus:outline-none">
                         <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                         </svg>
@@ -78,20 +77,19 @@
         </div>
         
         <!-- Mobile Menu Panel -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-blue-50 shadow-xl">
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-gray-100 shadow-xl absolute w-full">
             <div class="px-4 pt-4 pb-6 space-y-3 font-heading">
-                <a href="index.html" class="block px-3 py-2 text-brand-darkblue hover:text-brand-blue text-xl transition-colors">Home</a>
-                <a href="menu.html" class="block px-3 py-2 text-brand-darkblue hover:text-brand-blue text-xl transition-colors">Menu</a>
+                <a href="index.html" class="block px-3 py-2 text-brand-marine hover:text-brand-gold text-xl transition-colors">Home</a>
+                <a href="menu.html" class="block px-3 py-2 text-brand-marine hover:text-brand-gold text-xl transition-colors">Menu</a>
                 <a href="about.html" class="block px-3 py-2 text-brand-gold font-bold text-xl">About</a>
-                <a href="gallery.html" class="block px-3 py-2 text-brand-darkblue hover:text-brand-blue text-xl transition-colors">Gallery</a>
-                <a href="#" class="order-btn block mt-4 text-center bg-brand-gold text-brand-darkblue px-6 py-3 rounded-full font-bold shadow-md">Order Now</a>
+                <a href="gallery.html" class="block px-3 py-2 text-brand-marine hover:text-brand-gold text-xl transition-colors">Gallery</a>
+                <a href="#" class="order-btn block mt-4 text-center bg-brand-marine text-white px-6 py-3 rounded-full font-bold shadow-md">Order Now</a>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header (Now Vibrant Blue) -->
-    <section class="relative pt-40 pb-20 bg-brand-blue flex items-center justify-center min-h-[35vh]">
-        <div class="absolute inset-0 z-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+    <!-- Page Header (Marine Blue) -->
+    <section class="relative pt-40 pb-20 bg-brand-marine flex items-center justify-center min-h-[35vh]">
         <div class="relative z-10 text-center px-4">
             <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl text-white font-bold mb-4 drop-shadow-md">
                 Our <span class="text-brand-gold italic font-normal">Philosophy</span>
@@ -100,134 +98,130 @@
         </div>
     </section>
 
-    <!-- Mission & Vision Section -->
-    <section class="py-20 bg-brand-light">
+    <!-- Mission & Vision Section (White) -->
+    <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h2 class="font-heading text-3xl md:text-4xl font-bold text-brand-blue mb-6">The Star Maryann Standard</h2>
+                    <h2 class="font-heading text-3xl md:text-4xl font-bold text-brand-marine mb-6">The Star Maryann Standard</h2>
                     
                     <div class="mb-8">
-                        <h3 class="text-xl font-bold text-brand-darkblue mb-2 uppercase tracking-wide">Our Mission</h3>
-                        <p class="text-blue-900/80 leading-relaxed text-lg">
+                        <h3 class="text-xl font-bold text-brand-gold mb-2 uppercase tracking-wide">Our Mission</h3>
+                        <p class="text-gray-600 leading-relaxed text-lg">
                             To redefine the culinary landscape by delivering creatively crafted, presentable, and unforgettable dining experiences that celebrate both local heritage and global gastronomy.
                         </p>
                     </div>
 
                     <div>
-                        <h3 class="text-xl font-bold text-brand-darkblue mb-2 uppercase tracking-wide">Our Vision</h3>
-                        <p class="text-blue-900/80 leading-relaxed text-lg">
+                        <h3 class="text-xl font-bold text-brand-gold mb-2 uppercase tracking-wide">Our Vision</h3>
+                        <p class="text-gray-600 leading-relaxed text-lg">
                             To be the premier destination for fine dining, recognized for our unique ambiance, uncompromising quality, and the passionate mentors who drive our culinary excellence.
                         </p>
                     </div>
                 </div>
                 <div class="grid grid-cols-1 gap-4">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7jHkQn-e8CCREUNo3jgu5QDGK0qajOQJDCh6NeevQMA&s=10" alt="Plated Food" class="rounded-xl shadow-2xl border-4 border-white w-full h-96 object-cover">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7jHkQn-e8CCREUNo3jgu5QDGK0qajOQJDCh6NeevQMA&s=10" alt="Plated Food" class="rounded-xl shadow-2xl w-full h-96 object-cover">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mentors Section -->
-    <section class="py-20 bg-white">
+    <!-- Mentors Section (White with Cards) -->
+    <section class="py-20 bg-white border-t border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="font-heading text-3xl md:text-5xl font-bold text-brand-blue mb-4">Meet Our Mentors</h2>
+                <h2 class="font-heading text-3xl md:text-5xl font-bold text-brand-marine mb-4">Meet Our Mentors</h2>
                 <div class="w-24 h-1 bg-brand-gold mx-auto"></div>
-                <p class="mt-6 text-blue-900/70 max-w-2xl mx-auto text-lg">The visionary minds and culinary experts behind the excellence of Star Maryann.</p>
+                <p class="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">The visionary minds and culinary experts behind the excellence of Star Maryann.</p>
             </div>
 
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
+            <!-- 3 Column Grid for Mentors so there is room for text -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
                 <!-- Mentor 1 -->
-                <div class="text-center group">
-                    <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-brand-light group-hover:border-brand-gold transition-colors duration-300 shadow-lg">
-                        <img src="https://placehold.co/300x300/00AEEF/ffffff?text=Photo" alt="Mentor 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="text-center group bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
+                    <div class="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-md">
+                        <img src="https://placehold.co/300x300/0A192F/ffffff?text=Photo" alt="Mentor 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <h3 class="font-heading text-lg md:text-xl font-bold text-brand-darkblue">Name 1</h3>
-                    <p class="text-brand-blue font-medium uppercase text-sm tracking-wider mt-1">Job 1</p>
+                    <h3 class="font-heading text-2xl font-bold text-brand-marine">Name 1</h3>
+                    <p class="text-brand-gold font-bold uppercase text-xs tracking-wider mt-1 mb-4">Executive Chef</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        With over 15 years of experience in Michelin-starred kitchens, Name 1 brings a unique blend of traditional technique and modern flair to every dish.
+                    </p>
                 </div>
+
                 <!-- Mentor 2 -->
-                <div class="text-center group">
-                    <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-brand-light group-hover:border-brand-gold transition-colors duration-300 shadow-lg">
-                        <img src="https://placehold.co/300x300/FFD700/003366?text=Photo" alt="Mentor 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="text-center group bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
+                    <div class="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-md">
+                        <img src="https://placehold.co/300x300/0A192F/ffffff?text=Photo" alt="Mentor 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <h3 class="font-heading text-lg md:text-xl font-bold text-brand-darkblue">Name 2</h3>
-                    <p class="text-brand-blue font-medium uppercase text-sm tracking-wider mt-1">Job 2</p>
+                    <h3 class="font-heading text-2xl font-bold text-brand-marine">Name 2</h3>
+                    <p class="text-brand-gold font-bold uppercase text-xs tracking-wider mt-1 mb-4">Pastry Chef</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        A master of sugar and spice. Name 2 designs desserts that are not only visually breathtaking but perfectly balance sweetness with sophisticated local flavors.
+                    </p>
                 </div>
+
                 <!-- Mentor 3 -->
-                <div class="text-center group">
-                    <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-brand-light group-hover:border-brand-gold transition-colors duration-300 shadow-lg">
-                        <img src="https://placehold.co/300x300/003366/FFD700?text=Photo" alt="Mentor 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="text-center group bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
+                    <div class="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-md">
+                        <img src="https://placehold.co/300x300/0A192F/ffffff?text=Photo" alt="Mentor 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <h3 class="font-heading text-lg md:text-xl font-bold text-brand-darkblue">Name 3</h3>
-                    <p class="text-brand-blue font-medium uppercase text-sm tracking-wider mt-1">Job 3</p>
+                    <h3 class="font-heading text-2xl font-bold text-brand-marine">Name 3</h3>
+                    <p class="text-brand-gold font-bold uppercase text-xs tracking-wider mt-1 mb-4">Sommelier</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Curating a world-class wine list, Name 3 ensures that every glass poured harmonizes flawlessly with the intricate flavors of the Star Maryann menu.
+                    </p>
                 </div>
-                <!-- Mentor 4 -->
-                <div class="text-center group">
-                    <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-brand-light group-hover:border-brand-gold transition-colors duration-300 shadow-lg">
-                        <img src="https://placehold.co/300x300/00AEEF/003366?text=Photo" alt="Mentor 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <h3 class="font-heading text-lg md:text-xl font-bold text-brand-darkblue">Name 4</h3>
-                    <p class="text-brand-blue font-medium uppercase text-sm tracking-wider mt-1">Job 4</p>
-                </div>
-                <!-- Mentor 5 -->
-                <div class="text-center group col-span-2 sm:col-span-1">
-                    <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-brand-light group-hover:border-brand-gold transition-colors duration-300 shadow-lg">
-                        <img src="https://placehold.co/300x300/FFD700/ffffff?text=Photo" alt="Mentor 5" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <h3 class="font-heading text-lg md:text-xl font-bold text-brand-darkblue">Name 5</h3>
-                    <p class="text-brand-blue font-medium uppercase text-sm tracking-wider mt-1">Job 5</p>
-                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-brand-blue text-white py-12 border-t border-blue-400">
+    <!-- Footer (Marine Blue) -->
+    <footer class="bg-brand-marine text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
                 <h3 class="font-heading text-2xl font-bold text-brand-gold mb-4 uppercase tracking-wider">Star Maryann</h3>
-                <p class="text-blue-100">Uniqueness, creativity, and presentable fine dining experiences.</p>
+                <p class="text-gray-300">Uniqueness, creativity, and presentable fine dining experiences.</p>
             </div>
             <div>
-                <h4 class="font-bold text-white mb-4 uppercase">Contact</h4>
-                <p class="text-blue-100">Yaoundé, Cameroon</p>
-                <p class="text-blue-100">contact@starmaryann.com</p>
-                <p class="text-blue-100">+237 600 000 000</p>
+                <h4 class="font-bold text-white mb-4 uppercase tracking-wider">Contact</h4>
+                <p class="text-gray-300">Yaoundé, Cameroon</p>
+                <p class="text-gray-300">contact@starmaryann.com</p>
+                <p class="text-gray-300">+237 600 000 000</p>
             </div>
             <div>
-                <h4 class="font-bold text-white mb-4 uppercase">Hours</h4>
-                <p class="text-blue-100">Mon-Sat: 12:00 PM - 11:00 PM</p>
-                <p class="text-blue-100">Sun: 2:00 PM - 10:00 PM</p>
+                <h4 class="font-bold text-white mb-4 uppercase tracking-wider">Hours</h4>
+                <p class="text-gray-300">Mon-Sat: 12:00 PM - 11:00 PM</p>
+                <p class="text-gray-300">Sun: 2:00 PM - 10:00 PM</p>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-blue-400 text-center text-blue-200 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm">
             &copy; 2026 Star Maryann. All rights reserved.
         </div>
     </footer>
 
-    <!-- Coming Soon Modal -->
-    <div id="coming-soon-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-brand-darkblue/50 backdrop-blur-sm px-4">
-        <div class="bg-white rounded-3xl shadow-2xl p-8 max-w-sm w-full text-center">
-            <div class="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-brand-blue">
-                <svg class="w-8 h-8 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <!-- Blurred Coming Soon Modal -->
+    <div id="coming-soon-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-brand-marine/40 backdrop-blur-md px-4 transition-all">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-sm w-full text-center border border-gray-100">
+            <div class="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-4 border border-gray-200">
+                <svg class="w-8 h-8 text-brand-marine" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
             </div>
-            <h3 class="font-heading text-3xl font-bold text-brand-blue mb-2">Coming Soon!</h3>
-            <p class="text-brand-darkblue/70 mb-8">Our online ordering experience is currently being perfected. Please visit us to taste the magic in person!</p>
-            <button onclick="closeModal()" class="w-full bg-brand-gold text-brand-darkblue font-bold py-3 px-6 rounded-full hover:shadow-lg transition-all">Got it</button>
+            <h3 class="font-heading text-3xl font-bold text-brand-marine mb-2">Coming Soon!</h3>
+            <p class="text-gray-600 mb-8">Our online ordering experience is currently being perfected. Please visit us to taste the magic in person!</p>
+            <button onclick="closeModal()" class="w-full bg-brand-gold text-brand-marine font-bold py-3 px-6 rounded-full hover:shadow-lg transition-all">Got it</button>
         </div>
     </div>
 
     <!-- Scripts -->
     <script>
-        // Mobile Menu Toggle
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
         btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
 
-        // Modal Logic
         function openModal(e) {
             e.preventDefault();
             const modal = document.getElementById('coming-soon-modal');
@@ -239,8 +233,6 @@
             modal.classList.add('hidden');
             modal.classList.remove('flex');
         }
-        
-        // Attach modal to all order buttons
         document.querySelectorAll('.order-btn').forEach(button => {
             button.addEventListener('click', openModal);
         });
