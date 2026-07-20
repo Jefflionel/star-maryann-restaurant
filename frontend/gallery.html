@@ -16,7 +16,7 @@
                 extend: {
                     colors: {
                         brand: {
-                            marine: '#0A192F',
+                            marine: '#1E3A8A',
                             gold: '#D4AF37',
                             blue: '#00AEEF'
                         }
@@ -157,26 +157,6 @@
         </div>
     </div>
 
-    <!-- Scripts -->
-    <script>
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
-
-        function openModal(e) {
-            e.preventDefault();
-            const modal = document.getElementById('coming-soon-modal');
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-        }
-        function closeModal() {
-            const modal = document.getElementById('coming-soon-modal');
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-        }
-        document.querySelectorAll('.order-btn').forEach(button => {
-            button.addEventListener('click', openModal);
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
