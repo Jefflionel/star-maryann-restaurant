@@ -16,9 +16,10 @@
                 extend: {
                     colors: {
                         brand: {
-                            marine: '#1E3A8A',
+                            marine: '#00AEEF', 
                             gold: '#D4AF37',
-                            blue: '#00AEEF'
+                            blue: '#00AEEF',
+                            cream: '#FDFBF7'
                         }
                     },
                     fontFamily: {
@@ -32,7 +33,7 @@
     <style>
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #FFFFFF; }
-        ::-webkit-scrollbar-thumb { background: #0A192F; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb { background: #00AEEF; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
     </style>
 </head>
@@ -79,38 +80,57 @@
         </div>
     </nav>
 
-    <!-- Page Header (Marine Blue) -->
-    <section class="relative pt-40 pb-16 bg-brand-marine flex items-center justify-center min-h-[30vh]">
+    <!-- Light/Transparent Page Header -->
+    <!-- Creamy White Page Header -->
+    <section class="relative pt-40 pb-16 flex items-center justify-center min-h-[30vh] bg-brand-cream border-b border-gray-100">
         <div class="relative z-10 text-center px-4">
-            <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl text-white font-bold mb-4 drop-shadow-md">
+            <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl text-brand-marine font-bold mb-4 drop-shadow-sm">
                 Our <span class="text-brand-gold italic font-normal">Space</span>
             </h1>
             <div class="w-24 h-1 bg-brand-gold mx-auto"></div>
         </div>
     </section>
 
-    <!-- Photo Grid (Pure White background) -->
-    <section class="py-20 bg-white">
+    <!-- Photo Grid (Whisper-Pale Blue Background for Contrast) -->
+    <section class="py-20 bg-[#F4FAFE]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-                <img src="https://placehold.co/600x750/f3f4f6/0A192F?text=Interior" class="rounded-xl object-cover w-full h-64 md:h-80 shadow-md hover:shadow-xl transition-shadow" alt="Interior">
-                <img src="https://placehold.co/600x750/f3f4f6/0A192F?text=Dining+Hall" class="rounded-xl object-cover w-full h-64 md:h-80 shadow-md hover:shadow-xl transition-shadow" alt="Dining hall">
-                <img src="https://placehold.co/600x750/f3f4f6/0A192F?text=Bar+Area" class="rounded-xl object-cover w-full h-64 md:h-80 shadow-md hover:shadow-xl transition-shadow" alt="Bar area">
-                <img src="https://placehold.co/600x750/f3f4f6/0A192F?text=Terrace" class="rounded-xl object-cover w-full h-64 md:h-80 shadow-md hover:shadow-xl transition-shadow" alt="Terrace">
-                <img src="https://placehold.co/600x750/f3f4f6/0A192F?text=Signature+Dish" class="rounded-xl object-cover w-full h-64 md:h-80 shadow-md hover:shadow-xl transition-shadow" alt="Signature dish">
-                <img src="https://placehold.co/600x750/f3f4f6/0A192F?text=Exterior" class="rounded-xl object-cover w-full h-64 md:h-80 shadow-md hover:shadow-xl transition-shadow" alt="Exterior">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Image 1 -->
+                <div class="relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border-4 border-white bg-white">
+                    <img src="https://placehold.co/600x750/f3f4f6/00AEEF?text=Interior" class="object-cover w-full h-64 md:h-80" alt="Interior">
+                </div>
+                <!-- Image 2 -->
+                <div class="relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border-4 border-white bg-white">
+                    <img src="https://placehold.co/600x750/f3f4f6/00AEEF?text=Dining+Hall" class="object-cover w-full h-64 md:h-80" alt="Dining hall">
+                </div>
+                <!-- Image 3 -->
+                <div class="relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border-4 border-white bg-white">
+                    <img src="https://placehold.co/600x750/f3f4f6/00AEEF?text=Bar+Area" class="object-cover w-full h-64 md:h-80" alt="Bar area">
+                </div>
+                <!-- Image 4 -->
+                <div class="relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border-4 border-white bg-white">
+                    <img src="https://placehold.co/600x750/f3f4f6/00AEEF?text=Terrace" class="object-cover w-full h-64 md:h-80" alt="Terrace">
+                </div>
+                <!-- Image 5 -->
+                <div class="relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border-4 border-white bg-white">
+                    <img src="https://placehold.co/600x750/f3f4f6/00AEEF?text=Signature+Dish" class="object-cover w-full h-64 md:h-80" alt="Signature dish">
+                </div>
+                <!-- Image 6 -->
+                <div class="relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border-4 border-white bg-white">
+                    <img src="https://placehold.co/600x750/f3f4f6/00AEEF?text=Exterior" class="object-cover w-full h-64 md:h-80" alt="Exterior">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Architectural Video (White) -->
+    <!-- Architectural Video (Pure White) -->
     <section class="bg-white py-20 border-t border-gray-100">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-10">
             <p class="uppercase tracking-widest text-brand-gold text-sm font-bold mb-2">Step Inside</p>
             <h2 class="font-heading text-4xl text-brand-marine font-bold">Architectural Walkthrough</h2>
         </div>
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="aspect-video rounded-2xl bg-gray-50 shadow-inner border border-gray-200 flex items-center justify-center overflow-hidden">
+            <div class="aspect-video rounded-3xl bg-gray-50 shadow-lg border border-gray-100 flex items-center justify-center overflow-hidden hover:shadow-2xl transition-shadow duration-500">
                 <div class="text-center text-gray-400 px-6">
                     <svg width="64" height="64" viewBox="0 0 24 24" class="mx-auto mb-4 fill-brand-gold"><path d="M8 5v14l11-7z"/></svg>
                     <p class="text-lg">Video placeholder &mdash; replace this block with your &lt;video&gt; tag.</p>
@@ -124,21 +144,21 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
                 <h3 class="font-heading text-2xl font-bold text-brand-gold mb-4 uppercase tracking-wider">Star Maryann</h3>
-                <p class="text-gray-300">Uniqueness, creativity, and presentable fine dining experiences.</p>
+                <p class="text-gray-100">Uniqueness, creativity, and presentable fine dining experiences.</p>
             </div>
             <div>
                 <h4 class="font-bold text-white mb-4 uppercase tracking-wider">Contact</h4>
-                <p class="text-gray-300">Yaoundé, Cameroon</p>
-                <p class="text-gray-300">contact@starmaryann.com</p>
-                <p class="text-gray-300">+237 600 000 000</p>
+                <p class="text-gray-100">Yaoundé, Cameroon</p>
+                <p class="text-gray-100">contact@starmaryann.com</p>
+                <p class="text-gray-100">+237 600 000 000</p>
             </div>
             <div>
                 <h4 class="font-bold text-white mb-4 uppercase tracking-wider">Hours</h4>
-                <p class="text-gray-300">Mon-Sat: 12:00 PM - 11:00 PM</p>
-                <p class="text-gray-300">Sun: 2:00 PM - 10:00 PM</p>
+                <p class="text-gray-100">Mon-Sat: 12:00 PM - 11:00 PM</p>
+                <p class="text-gray-100">Sun: 2:00 PM - 10:00 PM</p>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-white/20 text-center text-gray-200 text-sm">
             &copy; 2026 Star Maryann. All rights reserved.
         </div>
     </footer>

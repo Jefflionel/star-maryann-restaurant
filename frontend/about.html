@@ -16,9 +16,10 @@
                 extend: {
                     colors: {
                         brand: {
-                            marine: '#1E3A8A', // Deep Marine Blue
-                            gold: '#D4AF37', // Fine Dining Gold
-                            blue: '#00AEEF' // Your vibrant logo blue (for hover accents)
+                            marine: '#00AEEF', 
+                            gold: '#D4AF37', 
+                            blue: '#00AEEF',
+                            cream: '#FDFBF7' // Added Creamy White
                         }
                     },
                     fontFamily: {
@@ -32,7 +33,7 @@
     <style>
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #FFFFFF; }
-        ::-webkit-scrollbar-thumb { background: #0A192F; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb { background: #00AEEF; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
     </style>
 </head>
@@ -88,13 +89,13 @@
         </div>
     </nav>
 
-    <!-- Page Header (Marine Blue) -->
-    <section class="relative pt-40 pb-20 bg-brand-marine flex items-center justify-center min-h-[35vh]">
+    <!-- Creamy White Page Header -->
+    <section class="relative pt-40 pb-16 flex items-center justify-center min-h-[30vh] bg-brand-cream border-b border-gray-100">
         <div class="relative z-10 text-center px-4">
-            <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl text-white font-bold mb-4 drop-shadow-md">
+            <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl text-brand-marine font-bold mb-4 drop-shadow-sm">
                 Our <span class="text-brand-gold italic font-normal">Philosophy</span>
             </h1>
-            <div class="w-24 h-1 bg-brand-gold mx-auto mb-6"></div>
+            <div class="w-24 h-1 bg-brand-gold mx-auto"></div>
         </div>
     </section>
 
@@ -120,14 +121,14 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-1 gap-4">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7jHkQn-e8CCREUNo3jgu5QDGK0qajOQJDCh6NeevQMA&s=10" alt="Plated Food" class="rounded-xl shadow-2xl w-full h-96 object-cover">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7jHkQn-e8CCREUNo3jgu5QDGK0qajOQJDCh6NeevQMA&s=10" alt="Plated Food" class="rounded-xl shadow-xl w-full h-96 object-cover hover:shadow-2xl transition-shadow duration-500 border-4 border-brand-cream">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mentors Section (White with Cards) -->
-    <section class="py-20 bg-white border-t border-gray-100">
+    <!-- Mentors Section (Creamy White with Hover Cards) -->
+    <section class="py-20 bg-brand-cream border-t border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="font-heading text-3xl md:text-5xl font-bold text-brand-marine mb-4">Meet Our Mentors</h2>
@@ -135,13 +136,12 @@
                 <p class="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">The visionary minds and culinary experts behind the excellence of Star Maryann.</p>
             </div>
 
-            <!-- 3 Column Grid for Mentors so there is room for text -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Mentor 1 -->
-                <div class="text-center group bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="text-center group bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 border border-white">
                     <div class="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-md">
-                        <img src="https://placehold.co/300x300/0A192F/ffffff?text=Photo" alt="Mentor 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <img src="https://placehold.co/300x300/00AEEF/ffffff?text=Photo" alt="Mentor 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <h3 class="font-heading text-2xl font-bold text-brand-marine">Name 1</h3>
                     <p class="text-brand-gold font-bold uppercase text-xs tracking-wider mt-1 mb-4">Executive Chef</p>
@@ -151,9 +151,9 @@
                 </div>
 
                 <!-- Mentor 2 -->
-                <div class="text-center group bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="text-center group bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 border border-white">
                     <div class="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-md">
-                        <img src="https://placehold.co/300x300/0A192F/ffffff?text=Photo" alt="Mentor 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <img src="https://placehold.co/300x300/00AEEF/ffffff?text=Photo" alt="Mentor 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <h3 class="font-heading text-2xl font-bold text-brand-marine">Name 2</h3>
                     <p class="text-brand-gold font-bold uppercase text-xs tracking-wider mt-1 mb-4">Pastry Chef</p>
@@ -163,9 +163,9 @@
                 </div>
 
                 <!-- Mentor 3 -->
-                <div class="text-center group bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="text-center group bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 border border-white">
                     <div class="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-md">
-                        <img src="https://placehold.co/300x300/0A192F/ffffff?text=Photo" alt="Mentor 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <img src="https://placehold.co/300x300/00AEEF/ffffff?text=Photo" alt="Mentor 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <h3 class="font-heading text-2xl font-bold text-brand-marine">Name 3</h3>
                     <p class="text-brand-gold font-bold uppercase text-xs tracking-wider mt-1 mb-4">Sommelier</p>
@@ -178,26 +178,26 @@
         </div>
     </section>
 
-    <!-- Footer (Marine Blue) -->
+    <!-- Footer -->
     <footer class="bg-brand-marine text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
                 <h3 class="font-heading text-2xl font-bold text-brand-gold mb-4 uppercase tracking-wider">Star Maryann</h3>
-                <p class="text-gray-300">Uniqueness, creativity, and presentable fine dining experiences.</p>
+                <p class="text-gray-100">Uniqueness, creativity, and presentable fine dining experiences.</p>
             </div>
             <div>
                 <h4 class="font-bold text-white mb-4 uppercase tracking-wider">Contact</h4>
-                <p class="text-gray-300">Yaoundé, Cameroon</p>
-                <p class="text-gray-300">contact@starmaryann.com</p>
-                <p class="text-gray-300">+237 600 000 000</p>
+                <p class="text-gray-100">Yaoundé, Cameroon</p>
+                <p class="text-gray-100">contact@starmaryann.com</p>
+                <p class="text-gray-100">+237 600 000 000</p>
             </div>
             <div>
                 <h4 class="font-bold text-white mb-4 uppercase tracking-wider">Hours</h4>
-                <p class="text-gray-300">Mon-Sat: 12:00 PM - 11:00 PM</p>
-                <p class="text-gray-300">Sun: 2:00 PM - 10:00 PM</p>
+                <p class="text-gray-100">Mon-Sat: 12:00 PM - 11:00 PM</p>
+                <p class="text-gray-100">Sun: 2:00 PM - 10:00 PM</p>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-white/20 text-center text-gray-200 text-sm">
             &copy; 2026 Star Maryann. All rights reserved.
         </div>
     </footer>
